@@ -69,7 +69,7 @@ func main() {
 }
 
 func initFirebase() *firebase.App {
-	opt := option.WithCredentialsFile("/Users/takochuu/eureka/src/github.com/takochuu/firebase-go/development.json")
+	opt := option.WithCredentialsFile("/path/to/development.json")
 	app, err := firebase.NewApp(context.Background(), nil, opt)
 	if err != nil {
 		glog.Errorln("Error")
